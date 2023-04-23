@@ -1,0 +1,52 @@
+@import "header";
+@import "hero";
+@import "stats";
+@import "leads";
+@import "pricing";
+@import "question";
+@import "footer";
+
+html,
+body {
+  font-size: 16px;
+}
+
+// * {
+//   border: 1px solid red;
+// }
+
+:root {
+  --white: #ffffff;
+  --white-dark: #f7f7f7;
+  --black: #000000;
+  --gray-1: #e8e9ed;
+  --gray-2: #00000029;
+  --gray-3: #a5a5a5;
+  --gray-4: #95989a;
+  --gray-5: #707070;
+  --gray-6: #13253b;
+  --gray-7: #d1d1d1;
+  --pink-1: #ff091129;
+  --pink-2: #f9043629;
+  --pink-3: #fb3b64;
+  --pink-4: #eb476e;
+  --green-light: #07ace629;
+  --green-dark: #55dfb4;
+  --blue-light: #07ace6;
+  --blue-dark: #08a6e4;
+
+  --max-width: 90vh;
+}
+
+.container {
+  @media (max-width: 1351px) {
+    padding: 0 15px;
+    max-width: 100%;
+    width: auto !important;
+  }
+
+  @media (min-width: 1352px) {
+    max-width: var(--max-width);
+    padding: 0;
+  }
+}

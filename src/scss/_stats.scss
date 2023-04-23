@@ -1,0 +1,119 @@
+.stats .stats__inner {
+  width: 100%;
+  // max-width: var(--max-width);
+  display: flex;
+  margin-inline: auto;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  // margin-top: -5rem;
+}
+
+.stats .stats__hdl {
+  margin: 7.75rem 0 0 0;
+  color: var(--black);
+  font-size: 2.25rem;
+  line-height: 1.1666;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-family: "Raleway", sans-serif;
+}
+
+.stats {
+  @media (max-width: 1351px) {
+    .stats__container {
+      display: flex;
+      flex-direction: column;
+
+      .stats__content {
+        margin: 0 auto;
+      }
+    }
+    .stats__hdl {
+      margin-bottom: 24px;
+
+      text-align: center;
+    }
+  }
+
+  @media (min-width: 1352px) {
+    .stats__container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      gap: 50px;
+
+      .stats__content {
+        margin: 6.3125rem 0 0 0;
+      }
+    }
+  }
+
+  background-color: var(--white);
+  box-sizing: border-box;
+  margin: 0 0 14.125rem 0;
+  width: 100%;
+  // display: flex;
+  // justify-content: center;
+  // flex-wrap: nowrap;
+  column-gap: 11.5rem;
+}
+
+.stats__content {
+  width: 100%;
+  max-width: 11rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content__circle {
+  position: relative;
+  display: block;
+  background-color: var(--pink-3);
+  width: 3.919375rem;
+  height: 3.919375rem;
+  border-radius: 3.919375rem;
+  margin-bottom: 0.8125rem;
+}
+
+.content__circle .content__img {
+  position: absolute;
+  top: 50%;
+  transform: translate(70%, -50%);
+}
+
+.content__circle .content__img.content__img--blue {
+  transform: translate(32%, -50%);
+}
+.content__circle .content__img.content__img--green {
+  transform: translate(65%, -50%);
+}
+
+.stats__content .content__circle.content__circle--blue {
+  background-color: var(--blue-dark);
+}
+
+.stats__content .content__circle.content__circle--green {
+  background-color: var(--green-dark);
+}
+
+.stats__content .content__count {
+  color: var(--black);
+  font-size: 1.25rem;
+  line-height: 1.5;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.3725rem;
+  text-align: center;
+  margin: 0 0 1.1875rem 0;
+}
+.stats__content .content__desc {
+  color: var(--gray-3);
+  font-size: 1.0625rem;
+  line-height: 1.25;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 0;
+  text-align: center;
+  margin: 0;
+}
